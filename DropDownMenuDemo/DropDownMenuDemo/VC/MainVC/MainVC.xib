@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="DropDownMenuDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="options" destination="rdA-j8-M0o" collectionClass="NSMutableArray" id="bIW-6G-0zZ"/>
+                <outletCollection property="options" destination="qfY-y2-J6K" collectionClass="NSMutableArray" id="ZSM-BU-n6T"/>
+                <outletCollection property="options" destination="8gJ-tf-oIo" collectionClass="NSMutableArray" id="TUP-Au-qEY"/>
+                <outletCollection property="options" destination="Rma-rH-kVF" collectionClass="NSMutableArray" id="okb-To-975"/>
+                <outletCollection property="options" destination="Mms-Mf-8uv" collectionClass="NSMutableArray" id="Tzx-1d-P5Z"/>
+                <outletCollection property="options" destination="urh-GA-O2a" collectionClass="NSMutableArray" id="nlb-t2-8Yg"/>
+                <outletCollection property="options" destination="fhe-JL-tem" collectionClass="NSMutableArray" id="FAn-Ep-h4K"/>
+                <outletCollection property="options" destination="d0H-Kf-RAN" collectionClass="NSMutableArray" id="5oJ-m5-SdT"/>
+                <outletCollection property="options" destination="1l1-zH-BRO" collectionClass="NSMutableArray" id="zjK-G8-MUQ"/>
+                <outletCollection property="options" destination="Yga-V0-02J" collectionClass="NSMutableArray" id="PbK-nO-5Hd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-4f-bw3">
+                    <rect key="frame" x="0.0" y="44" width="390" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64k-fe-lFU">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="linkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="f0d-ML-7z1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="最愛的歌手">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerBtnClick:" destination="-1" eventType="touchUpInside" id="y3n-1Z-pPT"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdA-j8-M0o">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="pBg-si-QKh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="郭靜">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="EtU-LD-48C"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfY-y2-J6K">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1zv-JR-P30"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="曾沛慈">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="Mlm-VD-1Vc"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gJ-tf-oIo">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lxu-TI-ta1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="吳汶芳">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="8gw-hr-3S2"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rma-rH-kVF">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="J68-xc-0Zc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="孫盛希">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="NW2-iW-SHe"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mms-Mf-8uv">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Vlh-49-IK3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="王詩安">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="6a7-Ls-2Vs"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urh-GA-O2a">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="XWc-gM-x3w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="魏如萱">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="E5w-qo-Q4A"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0H-Kf-RAN">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5WH-m5-rsF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="魏如昀">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="uba-TT-cHP"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l1-zH-BRO">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="bou-9k-NaY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="鄧紫棋">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="NVL-6o-Jod"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yga-V0-02J">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jLG-rd-Izv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="文慧如">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="qx1-yn-4ij"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-JL-tem">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="oN8-Qz-UtT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="IU (아이유)">
+                                <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="singerSNSLink:" destination="-1" eventType="touchUpInside" id="LDh-Pm-H0y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="d0H-Kf-RAN" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="Jhi-Dn-2fp"/>
+                        <constraint firstAttribute="trailing" secondItem="urh-GA-O2a" secondAttribute="trailing" id="KIu-c8-Dcd"/>
+                        <constraint firstItem="Rma-rH-kVF" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="MGe-59-MYS"/>
+                        <constraint firstItem="fhe-JL-tem" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="N5y-x8-WO2"/>
+                        <constraint firstAttribute="trailing" secondItem="8gJ-tf-oIo" secondAttribute="trailing" id="NeZ-Yd-EbQ"/>
+                        <constraint firstItem="urh-GA-O2a" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="PXu-XC-Edz"/>
+                        <constraint firstItem="64k-fe-lFU" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="Pcu-Lm-aD8"/>
+                        <constraint firstItem="Mms-Mf-8uv" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="QPf-YA-kdd"/>
+                        <constraint firstAttribute="trailing" secondItem="1l1-zH-BRO" secondAttribute="trailing" id="Wnl-b1-P7c"/>
+                        <constraint firstItem="qfY-y2-J6K" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="ZgZ-k7-QMq"/>
+                        <constraint firstAttribute="trailing" secondItem="Mms-Mf-8uv" secondAttribute="trailing" id="aaZ-cx-biC"/>
+                        <constraint firstItem="8gJ-tf-oIo" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="e8u-Ce-ykU"/>
+                        <constraint firstItem="Yga-V0-02J" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="eAh-AS-Yha"/>
+                        <constraint firstAttribute="trailing" secondItem="qfY-y2-J6K" secondAttribute="trailing" id="gNb-5w-lac"/>
+                        <constraint firstAttribute="trailing" secondItem="64k-fe-lFU" secondAttribute="trailing" id="iPa-g1-8uG"/>
+                        <constraint firstItem="1l1-zH-BRO" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="kld-8T-Vbl"/>
+                        <constraint firstAttribute="trailing" secondItem="d0H-Kf-RAN" secondAttribute="trailing" id="pPw-0o-yIo"/>
+                        <constraint firstItem="rdA-j8-M0o" firstAttribute="leading" secondItem="ciA-4f-bw3" secondAttribute="leading" id="qPH-qX-e0M"/>
+                        <constraint firstAttribute="trailing" secondItem="Rma-rH-kVF" secondAttribute="trailing" id="rND-uX-fln"/>
+                        <constraint firstAttribute="trailing" secondItem="fhe-JL-tem" secondAttribute="trailing" id="xQW-xr-gI8"/>
+                        <constraint firstAttribute="trailing" secondItem="Yga-V0-02J" secondAttribute="trailing" id="xrQ-sV-es8"/>
+                        <constraint firstAttribute="trailing" secondItem="rdA-j8-M0o" secondAttribute="trailing" id="zbN-2B-EVN"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ciA-4f-bw3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jcx-DK-is8"/>
+                <constraint firstAttribute="trailing" secondItem="ciA-4f-bw3" secondAttribute="trailing" id="xP6-oh-osD"/>
+                <constraint firstItem="ciA-4f-bw3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zMO-2X-wXX"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
